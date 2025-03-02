@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MNC Image Gallery in India</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .gallery {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            padding: 10px;
+            max-width: 1000px;
+            width: 100%;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        /* Media Queries */
+        @media (max-width: 600px) {
+            .gallery {
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="wipro.jpg" alt="Wipro Office">
+        <img src="Google.jpg" alt="Google India Office">
+        <img src="Microsoft.jpg" alt="Microsoft India Office">
+        <img src="Amazon.jpg" alt="Amazon India Office">
+        <img src="TCS.jpg" alt="TCS Office">
+        <img src="Infosys.jpg" alt="Infosys Office">
+    </div>
+</body>
+</html>
